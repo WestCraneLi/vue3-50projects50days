@@ -8,9 +8,7 @@ const currentIndex = ref(0);
 
 <template>
   <div class="container">
-    <div class="header">
-      <Back />
-    </div>
+    <Back />
     <div class="imgbox">
       <div
         class="img"
@@ -33,9 +31,6 @@ const currentIndex = ref(0);
   );
   overflow-y: auto;
   height: 100vh;
-}
-.header {
-  margin: 2rem;
 }
 .imgbox {
   width: 100vw;
