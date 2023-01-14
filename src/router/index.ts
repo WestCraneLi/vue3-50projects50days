@@ -7,7 +7,8 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: { transition: 'slide-right' },
     },
     {
       path: '/expanding-cards',
@@ -15,12 +16,14 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ExpandingCards.vue')
+      component: () => import('../views/ExpandingCards.vue'),
+      meta: { transition: 'slide-right' },
     },
     {
       path: '/progress-steps',
       name: 'progress-steps',
-      component: () => import('../views/ProgressSteps.vue')
+      component: () => import('../views/ProgressSteps.vue'),
+      meta: { transition: 'slide-right' },
     }
   ]
 })

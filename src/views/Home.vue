@@ -25,6 +25,7 @@ import { link } from "../assets/js/home/link";
     rgba(153, 245, 188, 0.9) 90%
   );
   overflow-y: auto;
+  height: 100vh;
 }
 .header {
   text-align: center;
